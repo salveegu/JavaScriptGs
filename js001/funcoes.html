@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   
+
+    <script>
+       // parseFloat para evitar bugs na tipagem da variavel, pois quando o usuario digita um numero na box(prompt) por padrao o tipo dela é string
+       
+     function areaDoCubo(lado1,lado2,lado3) {
+
+        var area = parseFloat(lado1)*parseFloat(lado2)*parseFloat(lado3)
+
+        return area
+         
+     }
+     
+     var lado1 = prompt('Digite o lado1:')
+     var lado2 = prompt('Digite o lado2')
+     var lado3 = prompt('Digite o lado3:')
+
+     var area = areaDoCubo(lado1,lado2,lado3)
+
+     
+    document.write('area do cubo: '+area)
+
+
+    </script>
+<body>
+    
+</body>
+</html>

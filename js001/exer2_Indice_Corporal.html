@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <script>
+
+    var nome = prompt('Digite seu nome: ')
+    var altura = prompt('Digite sua altura em centimetros: ')
+    var peso = prompt('Digite seu peso em Kilos: ')
+
+    
+     parseFloat(altura)
+     parseFloat(peso)
+
+    var convertMetros = altura/100
+    var massaCorporal = peso/(convertMetros*convertMetros)
+    
+    document.write('Seu nome: '+nome+'<br/>')
+    document.write('Sua altura : '+convertMetros+ ' metros '+'<br/>')
+    document.write('Seu peso: '+peso+'<br/>')
+    document.write('Sua massa corporal: '+massaCorporal+'<br/>')
+     
+    if (massaCorporal<16) {
+
+        document.write('Baixo peso muito grave')
+        
+    } else if(massaCorporal>=16 && massaCorporal<=16.99){
+        document.write('Baixo peso  grave')
+
+    }else if(massaCorporal>=17 && massaCorporal<=18.49){
+        document.write('Baixo peso ')
+
+    }else if(massaCorporal>=18,5 && massaCorporal<=24.99){
+        document.write('Peso normal ')
+
+    }else if(massaCorporal>=25 && massaCorporal<=29.99){
+        document.write('Peso normal ')
+
+    }else{
+        Document.write('error')
+    }
+
+
+    
+    </script>
+
+
+
+<body>
+    
+</body>
+</html>
