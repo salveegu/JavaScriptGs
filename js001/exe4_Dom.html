@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+   
+   
+
+   <style>
+       .btnRed{
+           background: red;
+           width: 100px;
+           height: 50px;
+           padding: 10px;
+           border: 1px;
+
+       }
+       .btnGreen{
+           background: green;
+           width: 100px;
+           height: 50px;
+           padding: 10px;
+           border: 1px;
+           
+        }
+        .btnBlue{
+            background: blue;
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            border: 1px;
+           
+        }
+   </style>
+
+<script>
+      
+    function MudaRed() {
+        document.getElementById('box').className='btnRed'
+        
+    }
+    function MudaGreen() {
+        document.getElementById('box').className='btnGreen'
+        
+    }
+    function MudaBlue() {
+        document.getElementById('box').className='btnBlue'
+        
+    }
+   </script>
+ 
+<body>
+
+    
+
+   <h1>Mudando cores e tamanhos dos elementos</h1>
+
+   <hr>
+
+   <div id="box"> Nosso Elemento</div>
+   
+   <hr>
+
+   <button id="btn1" onclick="MudaRed()" >Red</button>
+   <button id="btn2" onclick="MudaGreen()">Green</button>
+   <button id="btn3" onclick="MudaBlue()">Blue</button>
+
+    
+</body>
+
+
+</html>
