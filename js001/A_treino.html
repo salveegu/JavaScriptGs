@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+   
+      var objetos = Array('cadeira,mesa,pia')
+
+    function adcionarObjetos() {
+
+        var objeto = document.getElementById('objeto').value
+
+
+        if (objeto != '') {
+
+
+            if (objetos.indexOf(objeto) !== -1) {
+
+                alert('Objeto já foi adicionado')
+
+            } else {
+
+                objetos.push(objeto)
+                console.log(objetos)
+
+                document.getElementById('objeto').value = ''
+
+            }
+
+        } else {
+            alert('iforme um valor valido')
+
+        }
+ }
+
+    function ordenarObjetos() {
+            objetos.sort()
+            console.log(objetos)
+        }
+
+
+</script>
+
+
+
+<body>
+
+
+    <input placeholder="Digite o objeto" id="objeto" type="text">
+
+    <button onclick="adcionarObjetos()">Adicionar</button>
+    <button onclick="ordenarObjetos()">Ordenar</button>
+
+
+
+
+</body>
+
+</html>
