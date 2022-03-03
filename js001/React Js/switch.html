@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    function valor() {
+
+        x = prompt('Digite o numero do Produto desejado:')
+
+        switch (x) {
+            case '1':
+                console.log('Numero escolhido: ' + x + ' valor do Produto: R$ 1,00')
+                break;
+
+            case '2':
+                console.log('Numero escolhido: ' + x + ' valor do Produto: R$ 2,00')
+                break;
+
+            case '3':
+                console.log('Numero escolhido: ' + x + ' valor do Produto: R$ 3,00')
+                break;
+            default:
+                break;
+        }
+    }
+
+</script>
+
+<body>
+
+    <div>
+        <h1>
+            Digite o número desejado do produto para saber o preço:
+        </h1>
+        <br>
+
+        <span> 1 coca <br>
+               2 pepsi <br>
+               3 fanta 
+        </span>
+
+        <br><br>
+
+        <button onclick="valor()">Numero do produto</button>
+
+    </div>
+</body>
+
+</html>

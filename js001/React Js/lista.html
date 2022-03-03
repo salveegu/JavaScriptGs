@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista.html</title>
+</head>
+
+<style>
+
+    div{
+        padding: 5px;
+        background-color: aquamarine;
+    }
+</style>
+
+<script>
+
+    var lista = ['lucas', 'gustavo', 'pedro', 15]
+    var resetLista = ['lucas', 'gustavo', 'pedro', 15]
+    var area = document.getElementById('area')
+
+    function verLista() {
+
+
+
+        for (let index = 0; index < lista.length; index++) {
+
+            // document.write('<br/>')
+            document.write('<br/>' + lista[index])
+        }
+
+
+    }
+    function buscar() {
+
+        //var lista = ['lucas', 'gustavo', 'pedro', 15]
+        console.log(lista.indexOf('gustavo'))
+
+
+
+    }
+
+    function join() {
+        //var lista = ['lucas', 'gustavo', 'pedro', 15]
+        console.log(lista.join(' / '))
+
+    }
+
+    function pop() {
+        //var lista = ['lucas', 'gustavo', 'pedro', 15]
+
+
+        console.log(lista.pop())
+
+    }
+
+    function shift() {
+        //var lista = ['lucas', 'gustavo', 'pedro', 15]
+
+
+        console.log(lista.shift())
+
+    }
+    function reset() {
+
+        lista = resetLista
+
+        console.log(lista)
+    }
+
+    function change() {
+
+        var femaleLista = ('ana', 'barbara', 'celide', 'diana')
+        lista = femaleLista
+        // lista[0]='ana'
+        // lista[1]='barbara'
+        // lista[2]='celide'
+        // lista[3]='diana'
+
+        console.log(lista)
+    }
+
+    function check() {
+
+       if (lista.indexOf('gustavo')>-1) {
+
+        alert('esse nome está na lista!!')
+           
+       }else{
+        alert('não tem ninguem com esse nome!!')    
+       }
+    }
+
+
+</script>
+
+<body>
+
+    <div id="area"> Vendo a lista </div>
+    <button onclick="verLista()">Lista</button>
+
+    <div> Buscando o Nome gustavo</div>
+    <button onclick="buscar()"> Buscar</button>
+
+    <div> Dando um Join na Lista adicionando (' / ')</div>
+    <button onclick="join()"> Buscar</button>
+
+    <div> Removendo o ultimo elemento da lista Pop</div>
+    <button onclick="pop()"> Buscar</button>
+
+    <div> Removendo o primeiro elemento da lista Shift</div>
+    <button onclick="shift()"> Buscar</button>
+
+    <div> Resetando a lista</div>
+    <button onclick="reset()"> Resetar</button>
+
+    <div> Mudando elementos da lista</div>
+    <button onclick="change()"> alterar</button>
+
+    <div> Adicionando um elemento a lista</div>
+    <button onclick="push()"> push</button>
+
+    <div> Verificando se gustavo esta na lista</div>
+    <button onclick="check()"> check </button>
+
+
+
+
+
+</body>
+
+</html>

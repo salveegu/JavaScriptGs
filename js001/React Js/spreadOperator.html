@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+
+
+    var primeiros = [1, 2, 3]
+    var segundo = [7, 8, 9]
+
+    var juntando = [...primeiros, 4, 5, 6]
+
+    console.log(juntando)
+
+
+    var juntando2 = [...primeiros, ...segundo]
+
+    console.log(juntando2)
+
+
+    //utilizando o spreadOperator em Objetos
+
+    let casa={
+       sala:'tv',
+       cozinha:'pia',
+       banheiro:'chuveiro'
+
+    }
+    
+    // adicionando mais elementos
+
+   let adicionando = {
+       quarto:'cama',
+       quintal:'plantas',...casa
+   }
+
+   console.log(casa)
+   console.log(adicionando)
+
+      function cadastroPessoa(info) {
+          let novosDados ={
+              ...info,
+              cargo:'programador',
+              codigo:'010101'
+          } 
+          return novosDados;
+      }
+
+      console.log(cadastroPessoa({nome:'gustavo',sobrenome:'Souza'}))
+   
+</script>
+
+<body>
+
+</body>
+
+</html>
